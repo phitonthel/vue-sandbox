@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Interviews from '../views/Interviews.vue'
 import InterviewsMonteCarlo from '../views/InterviewsMonteCarlo.vue'
+import Form from '../views/Form.vue'
 
 Vue.use(VueRouter)
 
@@ -21,14 +22,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/interviews',
+    path: '/sandbox',
     name: 'Interviews',
     component: Interviews
   },
   {
-    path: '/sandbox',
+    path: '/interviews-monte-carlo',
     name: 'InterviewsMonteCarlo',
     component: InterviewsMonteCarlo
+  },
+  {
+    path: '/form',
+    name: 'Form',
+    component: Form
   }
 ]
 

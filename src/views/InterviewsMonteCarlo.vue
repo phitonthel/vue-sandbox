@@ -40,7 +40,8 @@ export default {
       nInterviews: 0,
       nParticipant: 0,
       percentage: 0,
-      messages: []
+      messages: [],
+      tries: 0
     }
   },
   methods: {
